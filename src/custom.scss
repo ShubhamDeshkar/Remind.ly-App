@@ -1,0 +1,8 @@
+$theme-colors: (
+	primary: #dc3545,
+	secondary: #fff,
+	ternary: #6c757d,
+	ternary-dark: #343a40
+);
+
+@import "../src/bootstrap/scss/bootstrap.scss";

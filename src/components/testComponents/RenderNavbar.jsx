@@ -5,7 +5,7 @@ class Navbar extends Component {
 	render() {
 		return (
 			<div>
-				<nav className="navbar navbar-expand bg-danger">
+				<nav className="navbar navbar-expand bg-primary">
 					<div className="container">
 						<a
 							href="s"
@@ -15,20 +15,24 @@ class Navbar extends Component {
 							Remind.ly
 						</a>
 						<ul className="navbar-nav">
-							<li className="nav-item">
-								<a href="s" className="nav-link text-white mx-2">
-									Home
-								</a>
-							</li>
-							<li className="nav-item">
-								<a href="s" className="nav-link text-white mx-2">
-									About
-								</a>
-							</li>
-							<li className="nav-item dropdown">
+							<a
+								href="s"
+								className="nav-item nav-link btn btn-primary text-white mx-1"
+							>
+								Home
+							</a>
+							<a
+								href="s"
+								className="nav-item nav-link btn btn-primary text-white mx-1"
+							>
+								About
+							</a>
+							<li class="nav-item dropdown">
 								<a
-									className="nav-link dropdown-toggle text-white mx-2"
+									class="nav-link dropdown-toggle text-white btn btn-primary mx-1"
 									href="s"
+									id="navbarDropdown"
+									role="button"
 									data-toggle="dropdown"
 									aria-haspopup="true"
 									aria-expanded="false"
@@ -51,17 +55,20 @@ class Navbar extends Component {
 						</ul>
 						<ul className="navbar-nav navbar-collapse justify-content-end">
 							<li className="nav-item">
-								<a href="s" className="nav-link text-white mx-3">
+								<a
+									href="s"
+									className="nav-link btn btn-primary text-white mx-3"
+								>
 									Sign in
 								</a>
 							</li>
 							<li className="nav-item">
 								<a
 									href="s"
-									className="nav-link btn btn-outline-primary text-white"
+									className="nav-link btn btn-primary"
 									style={{ borderColor: "white" }}
 								>
-									Get Started
+									GET STARTED
 								</a>
 							</li>
 						</ul>

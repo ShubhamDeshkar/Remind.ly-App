@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 // import RenderThis from "./testComponents/RenderThis";
 // import RenderThis2 from "./testComponents/RenderThis.2";
-// import Navbar from "./testComponents/RenderNavbar";
-import MyNavBar from "./testComponents/myNavBar";
+import Introcard from "./testComponents/Introcard";
+import FooterComponent from "./testComponents/Footer";
+import Shadowbar from "./testComponents/NewNavbar";
+import Form from "./testComponents/signinform/Form";
+import SigninCard from "./testComponents/SigninCard";
+import ErrorComp from "./testComponents/ErrorComp";
+import Navbar from "./Navbar.jsx";
 
 class RemindlyApp extends Component {
 	state = {};
@@ -11,8 +16,13 @@ class RemindlyApp extends Component {
 			<div>
 				{/* <RenderThis /> */}
 				{/* <RenderThis2 /> */}
-				{/* <Navbar /> */}
-				<MyNavBar />
+				<Navbar />
+				{/* <Shadowbar /> */}
+				{/* <Introcard /> */}
+				{/* <Form /> */}
+				{/* <SigninCard /> */}
+				{/* <ErrorComp /> */}
+				{/* <FooterComponent /> */}
 			</div>
 		);
 	}
