@@ -3,10 +3,17 @@ import React, { Component } from "react";
 // import RenderThis2 from "./testComponents/RenderThis.2";
 import Introcard from "./testComponents/Introcard";
 import FooterComponent from "./testComponents/Footer";
+import Copyright from "./testComponents/Copyright";
 import Shadowbar from "./testComponents/NewNavbar";
-import Form from "./testComponents/signinform/Form";
-import SigninCard from "./testComponents/SigninCard";
+import WhatsNew from "./WhatsNew";
+import Form from "./testComponents/signupform/Form";
+import SignupCard from "./testComponents/SignupCard";
 import ErrorComp from "./testComponents/ErrorComp";
+import Homepage from "./testComponents/homepage/Homepage";
+import BannerLight from "./testComponents/BannerLight";
+import Signforms from "./testComponents/Signforms";
+import SigninCard from "./testComponents/SigninCard";
+
 import Navbar from "./Navbar.jsx";
 
 class RemindlyApp extends Component {
@@ -14,15 +21,18 @@ class RemindlyApp extends Component {
 	render() {
 		return (
 			<div>
-				{/* <RenderThis /> */}
-				{/* <RenderThis2 /> */}
 				<Navbar />
-				{/* <Shadowbar /> */}
-				{/* <Introcard /> */}
+				<WhatsNew />
+				<Introcard />
+				<BannerLight />
+				<Signforms />
 				{/* <Form /> */}
-				{/* <SigninCard /> */}
+				{/* <SignupCard /> */}
 				{/* <ErrorComp /> */}
-				{/* <FooterComponent /> */}
+				{/* <SigninCard /> */}
+				{/* <Homepage /> */}
+				<FooterComponent />
+				<Copyright />
 			</div>
 		);
 	}

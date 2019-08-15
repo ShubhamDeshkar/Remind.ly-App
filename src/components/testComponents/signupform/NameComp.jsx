@@ -11,7 +11,7 @@ class NameComp extends Component {
 		return (
 			<form>
 				<div className="form-group">
-					<label htmlFor="">First Name</label>
+					<label>First Name</label>
 					<input
 						type="name"
 						className="form-control"

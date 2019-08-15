@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import SigninComp from "./SigninComp";
+import Form from "./signupform/Form";
 
-class SigninCard extends Component {
+class SignupCard extends Component {
 	render() {
 		return (
 			<div
@@ -13,10 +13,10 @@ class SigninCard extends Component {
 					height: "550px"
 				}}
 			>
-				<SigninComp />
+				<Form />
 			</div>
 		);
 	}
 }
 
-export default SigninCard;
+export default SignupCard;

@@ -35,14 +35,14 @@ class Navbar extends Component {
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="s">
-										Action
+										Remindly App
 									</a>
 									<a class="dropdown-item" href="s">
-										Another action
+										Remindly API
 									</a>
 									<div class="dropdown-divider" />
 									<a class="dropdown-item" href="s">
-										Something else here
+										GitHub
 									</a>
 								</div>
 							</li>
@@ -53,7 +53,7 @@ class Navbar extends Component {
 							</a>
 							<a
 								href="s"
-								className="nav-item nav-link btn btn-primary"
+								className="nav-item nav-link btn btn-outline-secondary"
 								style={{ borderColor: "white" }}
 							>
 								GET STARTED

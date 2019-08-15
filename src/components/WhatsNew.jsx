@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class WhatsNew extends Component {
 	render() {
 		return (
-			<div className="container" style={{ position: "fixed" }}>
+			<div className="container">
 				<div className="alert alert-ternary alert-dismissable fade show text-ternary-dark">
 					<button
 						type="button"
