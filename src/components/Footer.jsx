@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import twitter from "./homepage/images/003-twitter.svg";
-import facebook from "./homepage/images/001-facebook.svg";
-import instagram from "./homepage/images/002-instagram.svg";
-import google from "./homepage/images/006-google-plus.svg";
-import github from "./homepage/images/005-github.svg";
-import linkedin from "./homepage/images/004-linkedin.svg";
+import twitter from "./testComponents/homepage/images/003-twitter.svg";
+import facebook from "./testComponents/homepage/images/001-facebook.svg";
+import instagram from "./testComponents/homepage/images/002-instagram.svg";
+import google from "./testComponents/homepage/images/006-google-plus.svg";
+import github from "./testComponents/homepage/images/005-github.svg";
+import linkedin from "./testComponents/homepage/images/004-linkedin.svg";
 
 class FooterComponent extends Component {
 	render() {
 		return (
 			<div
-				className="pb-4 pt-3"
+				className="pb-5 pt-3"
 				style={{ marginTop: 50, backgroundColor: "#CCCCCC" }}
 			>
 				<div className="container">
 					<div className="row">
 						<div
-							className="col text-white"
+							className="col-7 text-white"
 							style={{ fontFamily: "Open Sans Condensed", fontSize: 35 }}
 						>
 							R
@@ -29,37 +29,38 @@ class FooterComponent extends Component {
 								<img
 									src={twitter}
 									alt="twitter"
-									className="col"
+									className="col btn"
 									style={{ height: 40, width: 40 }}
 								/>
 								<img
 									src={facebook}
 									alt="facebook"
-									className="col"
+									className="col btn"
 									style={{ height: 40, width: 40 }}
 								/>
 								<img
 									src={instagram}
 									alt="instagram"
-									className="col"
+									className="col btn"
 									style={{ height: 40, width: 40 }}
 								/>
-								<img
-									src={google}
-									alt="googlePlus"
-									className="col"
-									style={{ height: 40, width: 40 }}
-								/>
+
 								<img
 									src={github}
 									alt="github"
-									className="col"
+									className="col btn"
 									style={{ height: 40, width: 40 }}
 								/>
 								<img
 									src={linkedin}
 									alt="linkedin"
-									className="col"
+									className="col btn"
+									style={{ height: 40, width: 40 }}
+								/>
+								<img
+									src={google}
+									alt="googlePlus"
+									className="col btn"
 									style={{ height: 40, width: 40 }}
 								/>
 							</div>
@@ -67,7 +68,7 @@ class FooterComponent extends Component {
 					</div>
 					<div className="row mt-4">
 						<div className="col-2">
-							<h5 className="text-white font-weight-normal">About project</h5>
+							<h5 className="text-white font-weight-normal">About Project</h5>
 							<ul className="list-group text-ternary-dark">
 								<a href="s" className="list-group text-ternary-dark">
 									About
@@ -114,7 +115,8 @@ class FooterComponent extends Component {
 								</a>
 							</ul>
 						</div>
-						<h5 className="col-6 text-white font-weight-normal">
+						<div className="col-1" />
+						<h5 className="col-5 text-white font-weight-normal">
 							Subscribe to our news
 							<form className="form-inline mt-3">
 								<input

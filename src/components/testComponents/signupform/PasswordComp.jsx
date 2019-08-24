@@ -13,6 +13,7 @@ class PasswordComp extends Component {
 
 	render() {
 		const { values, handleChange, handleReset } = this.props;
+
 		return (
 			<form>
 				<div className="form-group">
@@ -20,6 +21,7 @@ class PasswordComp extends Component {
 					<input
 						type="password"
 						className="form-control"
+						autoFocus
 						style={{ width: "300px" }}
 						placeholder="Password"
 						defaultValue={values.password}
@@ -27,11 +29,11 @@ class PasswordComp extends Component {
 					/>
 					<small>Min 8 characters</small>
 				</div>
-				<div class="form-group">
+				<div className="form-group">
 					<label htmlFor="">Confirm Password</label>
 					<input
 						type="password"
-						class="form-control"
+						className="form-control"
 						style={{ width: "300px" }}
 						placeholder="Confirm Password"
 						defaultValue={values.confirmPassword}

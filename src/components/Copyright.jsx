@@ -8,7 +8,7 @@ class Copyright extends Component {
 					<div className="row w-100">
 						<div className="col pt-2">
 							Copyright &copy; {new Date().getFullYear()} Remindly. All rights
-							reserved. Shubham Deshkar&#8482;
+							reserved
 						</div>
 					</div>
 				</div>

@@ -1,22 +1,22 @@
 import React, { Component } from "react";
-import SigninComp from "./SigninComp";
+import Form from "./testComponents/signupform/Form";
 
-class SigninCard extends Component {
+class SignupCard extends Component {
 	render() {
 		return (
 			<div
 				className="container shadow-lg border"
 				style={{
-					marginTop: "150px",
+					marginTop: "100px",
 					borderRadius: 8,
 					width: "400px",
 					height: "550px"
 				}}
 			>
-				<SigninComp />
+				<Form />
 			</div>
 		);
 	}
 }
 
-export default SigninCard;
+export default SignupCard;

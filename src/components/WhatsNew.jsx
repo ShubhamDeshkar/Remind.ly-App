@@ -7,7 +7,7 @@ class WhatsNew extends Component {
 				<div className="alert alert-ternary alert-dismissable fade show text-ternary-dark">
 					<button
 						type="button"
-						class="close"
+						className="close"
 						data-dismiss="alert"
 						aria-label="Close"
 					>

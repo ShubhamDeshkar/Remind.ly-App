@@ -20,6 +20,8 @@ class EmailCompp extends Component {
 					<input
 						type="email"
 						className="form-control"
+						autoFocus
+						autoComplete="true"
 						style={{ width: "300px" }}
 						placeholder="Email"
 						defaultValue={values.email}
@@ -27,11 +29,11 @@ class EmailCompp extends Component {
 					/>
 					<small>We do not share your email with anyone!</small>
 				</div>
-				<div class="form-group">
+				<div className="form-group">
 					<label htmlFor="">Confirm Email</label>
 					<input
 						type="email"
-						class="form-control"
+						className="form-control"
 						style={{ width: "300px" }}
 						placeholder="Confirm Email"
 						defaultValue={values.confirmEmail}

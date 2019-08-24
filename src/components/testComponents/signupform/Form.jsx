@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import NameComp from "./NameComp";
 import EmailComp from "./EmailComp";
 import PasswordComp from "./PasswordComp";
+import DOBComp from "./DOBComp";
+// import Confirm from "./Confirm";
 
 class Form extends Component {
 	constructor() {
@@ -13,7 +15,9 @@ class Form extends Component {
 			email: "",
 			confirmEmail: "",
 			password: "",
-			confirmPassword: ""
+			confirmPassword: "",
+			dateOfBirth: new Date(),
+			dateOfJoining: new Date()
 		};
 	}
 
@@ -31,14 +35,9 @@ class Form extends Component {
 	};
 
 	handleChange = input => e => {
-		this.setState(
-			{
-				[input]: e.target.value
-			},
-			() => {
-				console.log(this.state);
-			}
-		);
+		this.setState({
+			[input]: e.target.value
+		});
 	};
 
 	handleReset = () => {
@@ -49,7 +48,9 @@ class Form extends Component {
 			email: "",
 			confirmEmail: "",
 			password: "",
-			confirmPassword: ""
+			confirmPassword: "",
+			dateOfBirth: new Date(),
+			dateOfJoining: new Date()
 		});
 	};
 
@@ -61,7 +62,9 @@ class Form extends Component {
 			email,
 			confirmEmail,
 			password,
-			confirmPassword
+			confirmPassword,
+			dateOfBirth,
+			dateOfJoining
 		} = this.state;
 
 		const values = {
@@ -71,7 +74,9 @@ class Form extends Component {
 			email,
 			confirmEmail,
 			password,
-			confirmPassword
+			confirmPassword,
+			dateOfBirth,
+			dateOfJoining
 		};
 
 		switch (step) {
@@ -139,6 +144,48 @@ class Form extends Component {
 						</div>
 					</div>
 				);
+
+			case 4:
+				return (
+					<div>
+						<div
+							className="h2 text-center py-5"
+							style={{ fontWeight: "normal" }}
+						>
+							So that we can wish you Happy Birthday!
+						</div>
+						<div className="container px-0 mt-5" style={{ width: "300px" }}>
+							<DOBComp
+								values={values}
+								nextStep={this.nextStep}
+								prevStep={this.prevStep}
+								handleChange={this.handleChange}
+								handleReset={this.handleReset}
+							/>
+						</div>
+					</div>
+				);
+
+			// case 5:
+			// 	return (
+			// 		<div>
+			// 			<div
+			// 				className="h2 text-center py-5"
+			// 				style={{ fontWeight: "normal" }}
+			// 			>
+			// 				Confirm?
+			// 			</div>
+			// 			<div className="container px-0 mt-5" style={{ width: "300px" }}>
+			// 				<Confirm
+			// 					values={values}
+			// 					nextStep={this.nextStep}
+			// 					prevStep={this.prevStep}
+			// 					handleChange={this.handleChange}
+			// 					handleReset={this.handleReset}
+			// 				/>
+			// 			</div>
+			// 		</div>
+			// 	);
 
 			default:
 				break;

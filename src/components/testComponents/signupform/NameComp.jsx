@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
 class NameComp extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			values: props.values
+		};
+	}
+
 	continue = e => {
 		e.preventDefault();
 		this.props.nextStep();
@@ -15,6 +22,8 @@ class NameComp extends Component {
 					<input
 						type="name"
 						className="form-control"
+						autoFocus
+						autoComplete="true"
 						style={{ width: "300px" }}
 						placeholder="First Name"
 						defaultValue={values.firstName}
@@ -22,11 +31,12 @@ class NameComp extends Component {
 					/>
 					<small>Min 2 characters</small>
 				</div>
-				<div class="form-group">
+				<div className="form-group">
 					<label htmlFor="">Last Name</label>
 					<input
 						type="name"
-						class="form-control"
+						className="form-control"
+						autoComplete="true"
 						style={{ width: "300px" }}
 						placeholder="Last Name"
 						defaultValue={values.lastName}

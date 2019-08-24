@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Features from "./Features";
-import Banner from "./Banner";
+import Features from "./testComponents/homepage/Features";
+import Banner from "./testComponents/homepage/Banner";
 
-class Homepage extends Component {
+class AboutPage extends Component {
 	render() {
 		return (
 			<div>
@@ -41,4 +41,4 @@ class Homepage extends Component {
 	}
 }
 
-export default Homepage;
+export default AboutPage;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ErrorComp extends Component {
+class Error extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -13,7 +13,7 @@ class ErrorComp extends Component {
 			<div className="container alert alert-ternary-dark alert-dismissable fade show text-ternary-dark">
 				<button
 					type="button"
-					class="close"
+					className="close"
 					data-dismiss="alert"
 					aria-label="Close"
 				>
@@ -36,4 +36,4 @@ class ErrorComp extends Component {
 	}
 }
 
-export default ErrorComp;
+export default Error;

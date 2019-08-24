@@ -4,7 +4,7 @@ import clipboard from "./images/clipboard.svg";
 class Banner extends Component {
 	render() {
 		return (
-			<div className="bg-primary text-center mt-5">
+			<div className="bg-primary text-center pb-3 mt-5">
 				<div className="container">
 					<div className="row w-100">
 						<h2 className="col text-center text-white font-weight-normal mt-2 mb-5">

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class IntroCard extends Component {
 	render() {
@@ -44,7 +45,7 @@ class IntroCard extends Component {
 					</div>
 				</div>
 				<small className="mx-auto">
-					Already using Remind.ly? <a href="s">Sign in</a>
+					Already using Remind.ly? <Link to="/signin">Sign in</Link>
 				</small>
 			</div>
 		);

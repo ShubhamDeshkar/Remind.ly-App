@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form from "./signupform/Form";
+import FgtPassword from "./testComponents/FgtPassword";
 
 class SignupCard extends Component {
 	render() {
@@ -7,13 +7,13 @@ class SignupCard extends Component {
 			<div
 				className="container shadow-lg border"
 				style={{
-					marginTop: "150px",
+					marginTop: "100px",
 					borderRadius: 8,
 					width: "400px",
 					height: "550px"
 				}}
 			>
-				<Form />
+				<FgtPassword />
 			</div>
 		);
 	}

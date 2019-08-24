@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RemindlyApp from './components/RemindlyApp'
+import RemindlyApp from './components/app/RemindlyApp'
 
 
 class App extends Component {
